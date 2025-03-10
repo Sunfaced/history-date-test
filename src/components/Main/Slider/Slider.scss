@@ -1,0 +1,131 @@
+.slider-container {
+  position: relative;
+  // width: 100%;
+  margin: 0 80px;
+  // padding: 0 20px;
+}
+
+.slider-content {
+  display: flex;
+  align-items: center;
+  // gap: 20px;
+  position: relative;
+}
+
+.slider-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.counter {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(66, 86, 122, 1);
+}
+
+.navigation-buttons,
+.navigation-buttons-left,
+.navigation-buttons-right {
+  display: flex;
+  gap: 20px;
+
+  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(66, 86, 122, 0.5);
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: #42567a;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}
+
+
+.navigation-buttons-left,
+.navigation-buttons-right {
+  display: flex;
+  align-items: center;
+  // padding: 40px 0;
+  button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    
+    z-index: 2;
+  }
+}
+
+.navigation-buttons-left {
+  right: -80px;
+}
+
+.navigation-buttons-right {
+  left: -80px;
+}
+
+.slider-wrapper {
+  flex: 1;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-swiper {
+  width: 100%;
+  overflow: visible;
+}
+
+.swiper-slide {
+  width: 320px !important;
+}
+
+
+.slide-year {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: rgba(56, 119, 238, 1);
+  margin-bottom: 15px;
+}
+
+.slide-description {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(66, 86, 122, 1);
+  max-width: 320px;
+  max-height: 135px;
+  margin-bottom: 104px;
+}

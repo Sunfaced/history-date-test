@@ -1,0 +1,17 @@
+.header__title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgba(66, 86, 122, 1);
+  margin-top: 170px;
+  margin-bottom: 96px;
+  padding-left: 78px;
+  border-left: 2px solid;
+  padding-left: 78px;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(56, 119, 238, 1),
+      rgba(239, 93, 168, 1)
+    ) 1;
+}

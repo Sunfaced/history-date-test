@@ -1,0 +1,20 @@
+@import 'modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'PT Sans', Arial, sans-serif;
+    background-color: rgba(244, 245, 249, 1);
+}
+
+
+.border-container {
+    max-width: 1442px;
+    width: 100%;
+    max-height: 1082px;
+    margin: 0 auto;
+    border: 1px solid rgba(66, 86, 122, 0.2);
+    background-color: rgba(244, 245, 249, 1);
+
+}
+
