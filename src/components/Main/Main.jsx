@@ -3,7 +3,7 @@ import "./Main.scss";
 import bgImage from "../../assets/Ellipse.png";
 
 import { correctTimelineData } from "../../data/newData"; 
-import Slider from "./Slider/Slider";
+import Slider from "../Footer/Slider/Slider";
 
 const Main = ({ data, changeIndex, currentIndex, timeLineLength }) => {
   const [points, setPoints] = useState([]);

@@ -49,7 +49,6 @@ const Slider = ({ info, changeIndex, currentIndex, timeLineLength }) => {
     };
 
     
-
     return (
         <div className="slider-container">
             <div className="slider-controls">
@@ -80,7 +79,7 @@ const Slider = ({ info, changeIndex, currentIndex, timeLineLength }) => {
                 <div className="slider-wrapper" key={currentIndex}>
                     <Swiper
                         modules={[Navigation]}
-                        slidesPerView="auto"
+                        slidesPerView={3}
                         spaceBetween={80}
                         navigation={{
                             prevEl: '.prev-button, .prev-button-left',
@@ -98,7 +97,7 @@ const Slider = ({ info, changeIndex, currentIndex, timeLineLength }) => {
                             }
                         }}
                         className="custom-swiper"
-                        loop={true}
+                        loop={info.length > 3}
                         observer={true}
                         observeParents={true}
                         speed={800}

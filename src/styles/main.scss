@@ -11,10 +11,11 @@ body {
 .border-container {
     max-width: 1442px;
     width: 100%;
-    max-height: 1082px;
     margin: 0 auto;
     border: 1px solid rgba(66, 86, 122, 0.2);
     background-color: rgba(244, 245, 249, 1);
-
+    overflow: hidden;
+    height: auto;
+    min-height: 100vh;
 }
 
