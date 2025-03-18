@@ -1,6 +1,11 @@
 .main {
   display: flex;
   justify-content: center;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+
 }
 
 .main__content {
@@ -12,11 +17,17 @@
   top: 215px;
   left: 50%;
   transform: translateX(-50%);
+  @media (max-width: 590px) {
+    display: none;
+  }
+
+
 
   .points-container {
     position: relative;
     width: 100%;
     height: 100%;
+    
   }
 
   .point-number {
@@ -48,6 +59,9 @@
     width: 1px;
     background-color: rgba(255, 255, 255, 1);
     opacity: 0.2;
+    @media screen and (max-width: 580px) {
+      display: none;
+    }
   }
 
   .main__content-horizontal-line {
@@ -55,7 +69,7 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
-    width: 1438px;
+    width: 1440px;
     height: 1px;
     background-color: rgba(255, 255, 255, 1);
     opacity: 0.2;
@@ -134,8 +148,15 @@
   gap: 100px;
   margin-bottom: 137px;
 
+  @media (max-width: 590px) {
+    // gap: clamp(20px, 8vw, 100px);
+    padding-bottom: 57px;
+    border-bottom: 1px solid rgba(199, 205, 217, 1);
+    margin-bottom: 20px;
+    gap: 30px;
+  }
   h2 {
-    font-size: 200px;
+    font-size: clamp(56px, 10vw, 200px);
     margin: 0;
     padding: 0;
     font-family: PT Sans;
